@@ -1,0 +1,3 @@
+#logo:hover #logo-background {
+  fill: var(--hover-color);
+}
