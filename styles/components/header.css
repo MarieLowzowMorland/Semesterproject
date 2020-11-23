@@ -16,6 +16,10 @@
   width: auto;
 }
 
+#logo svg path:last-of-type {
+  fill: white;
+}
+
 #menu-button {
   position: absolute;
   right: 0;
