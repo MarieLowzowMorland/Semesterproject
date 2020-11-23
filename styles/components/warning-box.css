@@ -1,0 +1,23 @@
+.warning-box {
+  background-color: var(--warning-box-background);
+  display: flex;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.warning-box svg {
+  width: 50px;
+  height: auto;
+  margin: 0 15px;
+}
+
+.warning-box div {
+  text-align: left;
+  color: var(--worning-text-color);
+  padding: 10px 10px 10px 0;
+  flex: 1 1 auto;
+}
+
+.warning-box p {
+  margin: 0;
+}

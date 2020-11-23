@@ -4,7 +4,29 @@ html {
   color: var(--text-color);
 }
 
-h1, h2, h3, h4, h5, h6, .heading, .big-heading{
+a {
+  color: var(---link-color);
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: var(--link-hover-color);
+}
+
+a:focus path,
+a:hover path {
+  fill: var(--link-hover-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading,
+.big-heading {
   font-weight: bold;
   text-transform: uppercase;
   color: var(--heading-color);

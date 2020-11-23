@@ -1,15 +1,22 @@
 :root {
   --heading-background: #fdea44;
+  --link-color: #fdea44;
+  --link-hover-color: #fda62d;
   --section-color-1: #fda62d;
   --section-color-2: #3cc4be;
   --section-color-3: #78e269;
   --section-color-4: #1e8de8;
   --section-color-5: #ffd8f1;
   --section-color-5: #e3e3e3;
+  --section-color-7: #000000;
+  --warning-box-background: #fdea44;
   --worning-text-color: #cc040a;
   --cosmology-text-color: #c9a049;
   --button-color: #000000;
   --heading-color: #000000;
-  --text-color: #000000;
+  --text-color-1: #000000;
+  --text-color-2: #ffffff;
+
+
   --hover-color: #3f3f3f;
 }
