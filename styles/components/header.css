@@ -8,7 +8,7 @@
 #logo {
   position: absolute;
   top: 0;
-  height: 8rem;
+  height: var(--logo-height);
 }
 
 #logo svg {

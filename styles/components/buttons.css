@@ -1,0 +1,15 @@
+.button {
+  display: inline-block;
+  min-width: 12rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  padding: 20px 0;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--hover-color);
+  color: var(--button-text-color);
+}

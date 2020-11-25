@@ -1,22 +1,37 @@
 :root {
+  /*box-colors*/
   --heading-background: #fdea44;
-  --link-color: #fdea44;
-  --link-hover-color: #fda62d;
+
   --section-color-1: #fda62d;
   --section-color-2: #3cc4be;
   --section-color-3: #78e269;
   --section-color-4: #1e8de8;
   --section-color-5: #ffd8f1;
-  --section-color-5: #e3e3e3;
+  --section-color-6: #e3e3e3;
   --section-color-7: #000000;
-  --warning-box-background: #fdea44;
-  --worning-text-color: #cc040a;
-  --cosmology-text-color: #c9a049;
+  --section-color-8: #D13E38;
+  
+
+  /*button*/
   --button-color: #000000;
-  --heading-color: #000000;
+  --button-text-color: #ffffff;
+
+  /*text-colors*/
   --text-color-1: #000000;
   --text-color-2: #ffffff;
 
+  --cosmology-text-color: #c9a049;
+  --link-color: #fdea44;
+  --heading-color: #000000;
 
+  /*warning-box*/
+  --worning-text-color: #cc040a;
+  --warning-box-background: #fdea44;
+
+  /*hover/focus-colors*/
   --hover-color: #3f3f3f;
+  --link-hover-color: #fda62d;
+
+  /*sizes*/
+  --logo-height: 130px;
 }

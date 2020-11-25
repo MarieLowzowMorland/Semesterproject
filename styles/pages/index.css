@@ -1,0 +1,85 @@
+.post-it h2 {
+  font-size: 2rem;
+}
+
+#welcome-section .post-it h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#welcome-section .post-it {
+  margin-top: 3rem;
+}
+
+#welcome-section > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/shop-open.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: var(--logo-height);
+}
+#opening-hours h2 {
+  margin-top: 0;
+}
+
+#opening-hours {
+  background-color: var(--section-color-7);
+  color: var(--text-color-2);
+}
+
+#opening-hours .warning-box {
+  margin: 0;
+}
+
+#visiting-professor > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/cosmology.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 20rem;
+}
+#visiting-professor .post-it,
+#visiting-professor .text-box {
+  background-color: var(--section-color-2);
+}
+
+#night > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/night-in-the-mueum.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 3rem;
+}
+
+#night .text-box,
+#night .post-it {
+  background-color: var(--section-color-1);
+}
+
+#energetica > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/energetica.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 3rem;
+}
+
+#energetica .text-box,
+#energetica .post-it {
+  background-color: var(--section-color-3);
+}
+
+#see-all-exhibitions {
+  background-image: url(../../images/kusama.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: var(--logo-height);
+}
+#see-all-exhibitions .button {
+  margin: 10px;
+}

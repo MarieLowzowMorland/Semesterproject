@@ -6,12 +6,14 @@
 }
 
 .warning-box svg {
-  width: 50px;
+  flex-shrink: 0;
+  width: 40px;
   height: auto;
   margin: 0 15px;
 }
 
-.warning-box div {
+.warning-box div,
+.warning-box p {
   text-align: left;
   color: var(--worning-text-color);
   padding: 10px 10px 10px 0;
