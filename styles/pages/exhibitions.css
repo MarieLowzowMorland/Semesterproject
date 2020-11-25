@@ -1,0 +1,134 @@
+.post-it svg {
+  display: inline;
+  margin-left: 10px;
+}
+
+.post-it h2 {
+  padding: 0;
+}
+
+.post-it > div:first-child {
+  padding: 10px;
+}
+
+#exhibition-overview .button {
+  margin: 3px;
+}
+
+#exhibition-overview > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/exhibitions.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: var(--logo-height);
+}
+
+#exhibition-overview .heading-box {
+  margin: 3rem 0;
+}
+
+#exhibition-overview ul {
+  float: right;
+  margin-right: 1rem;
+}
+
+#covid {
+  flex: 1 1 auto;
+  background-image: url(../../images/covid.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: var(--logo-height);
+}
+
+#covid .post-it {
+  background-color: var(--section-color-5);
+  flex-direction: column-reverse;
+  align-self: flex-end;
+  display: flex;
+}
+
+#robotics {
+  flex: 1 1 auto;
+  background-image: url(../../images/robotics.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: var(--logo-height);
+}
+
+#robotics .post-it {
+  background-color: var(--section-color-8);
+}
+
+#physics {
+  flex: 1 1 auto;
+  background-image: url(../../images/physics.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: var(--logo-height);
+}
+
+#physics .post-it {
+  background-color: var(--section-color-1);
+}
+
+#cosmology {
+  flex: 1 1 auto;
+  background-image: url(../../images/cosmology.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: var(--logo-height);
+}
+
+#cosmology .post-it h2,
+#cosmology .post-it {
+  background-color: var(--section-color-7);
+  color: var(--cosmology-text-color);
+}
+
+#body {
+  flex: 1 1 auto;
+  background-image: url(../../images/medic.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: var(--logo-height);
+}
+
+#body .post-it h2,
+#body .post-it {
+  background-color: var(--section-color-2);
+  color: var(--text-color-2);
+}
+
+#chemesry {
+  flex: 1 1 auto;
+  background-image: url(../../images/chemestry.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: var(--logo-height);
+}
+
+#chemesry .post-it h2,
+#chemesry .post-it {
+  background-color: var(--section-color-4);
+  color: var(--text-color-2);
+}
+
+#ecology {
+  flex: 1 1 auto;
+  background-image: url(../../images/ecology.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: var(--logo-height);
+}
+
+#ecology .post-it {
+  background-color: var(--section-color-3);
+}
