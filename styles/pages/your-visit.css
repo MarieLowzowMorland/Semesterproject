@@ -1,0 +1,35 @@
+#opening-hours > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/museum.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: calc(var(--logo-height) + 40px);
+}
+
+#shop > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/shop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: var(--logo-height);
+}
+
+#café > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/cafe.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: var(--logo-height);
+}
+
+#accessibility > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/accsessibility.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: var(--logo-height);
+}

@@ -142,12 +142,14 @@
     </header>
 
     <main>
-      <section>
+      <section id="opening-hours">
         <div>
           <div role="img" aria-label="picture of the museum building"></div>
-          <h1>Visit us</h1>
+          <div class="heading-box">
+            <h1>Visit us</h1>
+          </div>
         </div>
-        <div>
+        <div class="text-box">
           <h2>Opening hours</h2>
           <ul>
             <li>Monday: Closed</li>
@@ -158,25 +160,27 @@
             <li>Saturday: Closed</li>
             <li>Sunday: Closed</li>
           </ul>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 28 28"
-            >
-              <path
-                data-name="Subtraction 4"
-                d="M-5091,5668a13.908,13.908,0,0,1-9.9-4.1,13.906,13.906,0,0,1-4.1-9.9,13.9,13.9,0,0,1,4.1-9.9,13.906,13.906,0,0,1,9.9-4.1,13.906,13.906,0,0,1,9.9,4.1,13.9,13.9,0,0,1,4.1,9.9,13.907,13.907,0,0,1-4.1,9.9A13.907,13.907,0,0,1-5091,5668Zm-1.2-9v2h2.021v-2Zm-.079-12.314v3.175l.537,7.588h1.133l.508-7.588v-3.175Z"
-                transform="translate(5105 -5640)"
-                fill="#cc040a"
-              />
-            </svg>
-            <p>
-              The museum is closed until further notice. The museum shop is open
-              Tuesday - Sunday 12:00 - 18:00.
-            </p>
-          </div>
+        </div>
+        <div class="warning-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+          >
+            <path
+              data-name="Subtraction 4"
+              d="M-5091,5668a13.908,13.908,0,0,1-9.9-4.1,13.906,13.906,0,0,1-4.1-9.9,13.9,13.9,0,0,1,4.1-9.9,13.906,13.906,0,0,1,9.9-4.1,13.906,13.906,0,0,1,9.9,4.1,13.9,13.9,0,0,1,4.1,9.9,13.907,13.907,0,0,1-4.1,9.9A13.907,13.907,0,0,1-5091,5668Zm-1.2-9v2h2.021v-2Zm-.079-12.314v3.175l.537,7.588h1.133l.508-7.588v-3.175Z"
+              transform="translate(5105 -5640)"
+              fill="#cc040a"
+            />
+          </svg>
+          <p>
+            The museum is closed until further notice. The museum shop is open
+            Tuesday - Sunday 12:00 - 18:00.
+          </p>
+        </div>
+        <div class="text-box">
           <h2>Admission</h2>
           <p>The entrance is free for all.</p>
           <p>
@@ -188,12 +192,12 @@
         </div>
       </section>
 
-      <section>
+      <section id="location">
         <div
           role="img"
           aria-label="map to see where the museum is locatded"
         ></div>
-        <div>
+        <div class="post-it">
           <h2>Location</h2>
           <p>The museum is located at</p>
           <p>Vårveien 55, 1182 Oslo</p>
@@ -233,9 +237,9 @@
         </div>
       </section>
 
-      <section>
+      <section id="café">
         <div role="img" aria-label="Picture of the Cafe at the Museum"></div>
-        <div>
+        <div class="post-it">
           <h2>Food and drink</h2>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -256,12 +260,12 @@
         </div>
       </section>
 
-      <section>
+      <section id="shop">
         <div
           role="img"
           aria-label="Picture of a construction kit for a ball track that you can buy at the museum shop "
         ></div>
-        <div>
+        <div class="post-it">
           <h2>Shop</h2>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -282,12 +286,12 @@
         </div>
       </section>
 
-      <section>
+      <section id="accessibility">
         <div
           role="img"
           aria-label="Picture of the accessibility icon painted on the ground"
         ></div>
-        <div>
+        <div class="post-it">
           <h2>Accessibility</h2>
           <svg
             data-name="Icon awesome-wheelchair"
@@ -447,7 +451,13 @@
           Vårveien 55,<br />
           1182 Oslo
         </a>
-        <img class="marker-icon" src="./images/marker.svg" height="40" width="33" alt="" />
+        <img
+          class="marker-icon"
+          src="./images/marker.svg"
+          height="40"
+          width="33"
+          alt=""
+        />
       </section>
     </footer>
   </body>
