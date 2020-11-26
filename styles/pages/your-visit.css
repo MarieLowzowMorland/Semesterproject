@@ -1,3 +1,17 @@
+.post-it svg {
+  display: inline;
+  margin-left: 10px;
+}
+
+.post-it h2 {
+  padding: 0;
+}
+
+.post-it {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 #opening-hours > div:first-child {
   flex: 1 1 auto;
   background-image: url(../../images/museum.jpg);
@@ -7,16 +21,24 @@
   padding-top: calc(var(--logo-height) + 40px);
 }
 
-#shop > div:first-child {
+#opening-hours .post-it {
+  background-color: var(--section-color-8);
+}
+
+#location {
   flex: 1 1 auto;
-  background-image: url(../../images/shop.jpg);
+  background-image: url(../../images/map\ kopi.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: var(--logo-height);
+  padding-top: calc(var(--logo-height) + 40px);
 }
 
-#café > div:first-child {
+#location .post-it {
+  background-color: var(--section-color-8);
+}
+
+#café {
   flex: 1 1 auto;
   background-image: url(../../images/cafe.jpg);
   background-size: cover;
@@ -25,11 +47,37 @@
   padding-top: var(--logo-height);
 }
 
-#accessibility > div:first-child {
+#café .post-it {
+  background-color: var(--section-color-1);
+}
+
+#café .post-it svg,
+#shop .post-it svg {
+  padding-bottom: 10px;
+}
+
+#shop {
+  flex: 1 1 auto;
+  background-image: url(../../images/shop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: var(--logo-height);
+}
+
+#shop .post-it {
+  background-color: var(--section-color-3);
+}
+
+#accessibility {
   flex: 1 1 auto;
   background-image: url(../../images/accsessibility.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: var(--logo-height);
+  padding-top: 500px;
+}
+
+#accessibility .post-it {
+  background-color: var(--section-color-6);
 }
