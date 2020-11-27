@@ -1,0 +1,38 @@
+#support > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/support.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: calc(var(--logo-height) + 85px);
+}
+
+#support .text-box {
+  background-color: var(--section-color-9);
+}
+
+#volunteer > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/volenter.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: var(--logo-height);
+}
+
+#volunteer .text-box {
+  background-color: var(--section-color-1);
+}
+
+#internship > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/inturn.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: var(--logo-height);
+}
+
+#internship .text-box {
+  background-color: var(--section-color-3);
+}
