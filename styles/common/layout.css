@@ -10,6 +10,8 @@ body {
 }
 
 .post-it {
+  display: flex;
+  flex-direction: column;
   position: relative;
   max-width: 355px;
 }
