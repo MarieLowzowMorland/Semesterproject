@@ -1,0 +1,53 @@
+#explore > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/explore-together.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: calc(var(--logo-height) + 150px);
+}
+
+#explore .text-box {
+  background-color: var(--section-color-5);
+}
+
+#kids > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/kid.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: calc(var(--logo-height) + 85px);
+}
+
+#kids .text-box h2,
+#kids .text-box {
+  background-color: var(--section-color-4);
+  color: var(--text-color-2);
+}
+
+#teacher > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/teach.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: calc(var(--logo-height) + 85px);
+}
+
+#teacher .text-box {
+  background-color: var(--section-color-2);
+}
+
+#researcher > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/reasercher.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: calc(var(--logo-height) + 85px);
+}
+
+#researcher .text-box {
+  background-color: var(--section-color-6);
+}
