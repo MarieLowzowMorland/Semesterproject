@@ -70,6 +70,10 @@ main section {
   box-sizing: border-box;
 }
 
+.block{
+  display: block;
+}
+
 .flex-end {
   align-self: flex-end;
 }

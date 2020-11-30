@@ -34,5 +34,6 @@
 }
 
 .text-box .warning-box > input {
+  flex-shrink: 0;
   margin-right: 15px;
 }
