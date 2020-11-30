@@ -1,4 +1,4 @@
-fieldset{
+fieldset {
   margin: 0;
   border: 0;
 }
@@ -27,7 +27,33 @@ fieldset{
 
 .input-with-label > input::placeholder {
   color: #ccc;
-  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/* CHECKBOXES */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: white;
+  padding: 10px;
+  margin: 0;
+  width: 1px;
+  height: 1px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:hover,
+input[type="checkbox"]:focus {
+   border-color: black;
+}
+
+input[type="checkbox"]:checked {
+  background-image: url("../../images/check.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 /* SELECT */

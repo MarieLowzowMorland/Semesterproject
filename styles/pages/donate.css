@@ -29,12 +29,6 @@
   margin-bottom: 80px;
 }
 
-#donate > .post-it {
-  background-color: var(--section-color-5);
-  text-transform: uppercase;
-}
-
-#donate > .post-it em {
-  font-size: 1.25rem;
+#donate em {
   font-weight: bold;
 }
