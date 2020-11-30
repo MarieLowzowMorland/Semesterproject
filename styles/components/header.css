@@ -24,7 +24,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   height: 50px;
 }
 
@@ -49,6 +49,7 @@
 #menu {
   display: none;
   position: absolute;
+  z-index: 1;
   top: 0;
   right: 0;
   transform: translateY(-100%);
