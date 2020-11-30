@@ -73,6 +73,10 @@
   color: white;
   background-color: black;
 }
+#menu li a.active{
+  color: var(--link-color);
+  background-color: black;
+}
 
 #toggle-menu:checked ~ #menu {
   display: block;
