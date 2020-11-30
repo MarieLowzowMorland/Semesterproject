@@ -1,3 +1,11 @@
+main > section:not(#opening-hours),
+#opening-hours > div:first-child {
+  flex: 1 1 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .post-it svg {
   display: inline;
   margin-left: 10px;
@@ -13,11 +21,7 @@
 }
 
 #opening-hours > div:first-child {
-  flex: 1 1 auto;
   background-image: url(../../images/museum.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   padding-top: calc(var(--logo-height) + 40px);
 }
 
@@ -26,12 +30,7 @@
 }
 
 #location {
-  flex: 1 1 auto;
   background-image: url(../../images/map\ kopi.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: calc(var(--logo-height) + 40px);
 }
 
 #location .post-it {
@@ -39,12 +38,7 @@
 }
 
 #café {
-  flex: 1 1 auto;
   background-image: url(../../images/cafe.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: var(--logo-height);
 }
 
 #café .post-it {
@@ -57,12 +51,7 @@
 }
 
 #shop {
-  flex: 1 1 auto;
   background-image: url(../../images/shop.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: var(--logo-height);
 }
 
 #shop .post-it {
@@ -70,12 +59,7 @@
 }
 
 #accessibility {
-  flex: 1 1 auto;
   background-image: url(../../images/accsessibility.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 500px;
 }
 
 #accessibility .post-it {

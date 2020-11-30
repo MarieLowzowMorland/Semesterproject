@@ -11,16 +11,20 @@
   padding: 10px;
 }
 
+main > section:not(#exhibition-overview),
+#exhibition-overview > div:first-child {
+  flex: 1 1 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 #exhibition-overview .button {
   margin: 3px;
 }
 
 #exhibition-overview > div:first-child {
-  flex: 1 1 auto;
   background-image: url(../../images/exhibitions.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   padding-top: var(--logo-height);
 }
 
@@ -34,12 +38,7 @@
 }
 
 #covid {
-  flex: 1 1 auto;
   background-image: url(../../images/covid.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 420px;
 }
 
 #covid .post-it {
@@ -48,12 +47,7 @@
 }
 
 #robotics {
-  flex: 1 1 auto;
   background-image: url(../../images/robotics.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 40px;
 }
 
 #robotics .post-it {
@@ -63,12 +57,7 @@
 }
 
 #physics {
-  flex: 1 1 auto;
   background-image: url(../../images/physics.jpg);
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
-  padding-top: 400px;
 }
 
 #physics .post-it {
@@ -76,12 +65,7 @@
 }
 
 #cosmology {
-  flex: 1 1 auto;
   background-image: url(../../images/cosmology.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 400px;
 }
 
 #cosmology .post-it h2,
@@ -96,12 +80,7 @@
 }
 
 #body {
-  flex: 1 1 auto;
   background-image: url(../../images/medic.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 400px;
 }
 
 #body .post-it h2,
@@ -111,12 +90,7 @@
 }
 
 #chemestry {
-  flex: 1 1 auto;
   background-image: url(../../images/chemestry.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: var(--logo-height);
 }
 
 #chemestry .post-it h2,
@@ -131,12 +105,7 @@
 }
 
 #ecology {
-  flex: 1 1 auto;
   background-image: url(../../images/ecology.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: 300px;
 }
 
 #ecology .post-it {

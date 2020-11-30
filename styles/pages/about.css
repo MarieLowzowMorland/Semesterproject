@@ -1,9 +1,15 @@
-#explore > div:first-child {
-  flex: 1 1 auto;
-  background-image: url(../../images/explore-together.jpg);
+#explore > div:first-child,
+#kids > div:first-child,
+#teacher > div:first-child,
+#researcher > div:first-child {
+  flex: 1 1 calc(var(--logo-height) + 85px);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#explore > div:first-child {
+  background-image: url(../../images/explore-together.jpg);
   padding-top: calc(var(--logo-height) + 150px);
 }
 
@@ -12,12 +18,7 @@
 }
 
 #kids > div:first-child {
-  flex: 1 1 auto;
   background-image: url(../../images/kid.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: calc(var(--logo-height) + 85px);
 }
 
 #kids .text-box h2,
@@ -27,12 +28,7 @@
 }
 
 #teacher > div:first-child {
-  flex: 1 1 auto;
   background-image: url(../../images/teach.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: calc(var(--logo-height) + 85px);
 }
 
 #teacher .text-box {
@@ -40,12 +36,7 @@
 }
 
 #researcher > div:first-child {
-  flex: 1 1 auto;
   background-image: url(../../images/reasercher.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-top: calc(var(--logo-height) + 85px);
 }
 
 #researcher .text-box {

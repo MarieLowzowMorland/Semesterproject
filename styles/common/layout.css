@@ -82,6 +82,30 @@ main section {
   flex-grow: 1;
 }
 
+.flex-grow-2 {
+  flex-grow: 2;
+}
+
+.flex-grow-3 {
+  flex-grow: 3;
+}
+
+.flex-grow-4 {
+  flex-grow: 4;
+}
+
+.flex-grow-5 {
+  flex-grow: 5;
+}
+
+.flex-grow,
+.flex-grow-,
+.flex-grow-3,
+.flex-grow-4,
+.flex-grow-5 {
+  flex-basis: auto;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
