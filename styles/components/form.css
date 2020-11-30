@@ -44,7 +44,9 @@ fieldset{
 }
 
 .select-wrapper > select {
+  align-items: flex-end;
   appearance: none;
+  -webkit-appearance: none;
   background-color: transparent;
   border: none;
   width: 100%;
@@ -88,7 +90,7 @@ fieldset{
 }
 
 /* LABEL */
-input[type="radio"] + label
+input[type="radio"] + label,
 .select-wrapper > label,
 .input-with-label > label {
   text-transform: uppercase;
