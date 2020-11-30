@@ -1,8 +1,9 @@
 .warning-box {
   background-color: var(--warning-box-background);
-  display: flex;
   width: 100%;
   margin: 10px 0;
+  display: flex;
+  align-items: center;
 }
 
 .warning-box svg {
@@ -13,7 +14,8 @@
 }
 
 .warning-box div,
-.warning-box p {
+.warning-box p,
+.warning-box label {
   text-align: left;
   color: var(--worning-text-color);
   padding: 10px 10px 10px 0;

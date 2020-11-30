@@ -1,0 +1,31 @@
+#join > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/explore-together.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: calc(var(--logo-height) + 145px);
+}
+
+#join .text-box {
+  background-color: var(--section-color-1);
+}
+
+#join .text-box > div:first-child{
+  margin-bottom: 30px;
+}
+
+#join .warning-box {
+  width: calc(100% + 2rem);
+  margin: 10px 0 10px -1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+#join .warning-box > input {
+  margin-right: 10px;
+}
+
+#join .button{
+  width: 100%;
+}

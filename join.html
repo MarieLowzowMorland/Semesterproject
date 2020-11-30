@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Community Sience Museum|join</title>
+    <title>Community Sience Museum|Join</title>
     <meta
       name="description"
       content="The form for joining activities at Community Sience Museum."
@@ -16,6 +16,11 @@
     <link href="./styles/common/fonts.css" rel="stylesheet" type="text/CSS" />
     <link
       href="./styles/common/variables.css"
+      rel="stylesheet"
+      type="text/CSS"
+    />
+    <link
+      href="./styles/components/form.css"
       rel="stylesheet"
       type="text/CSS"
     />
@@ -138,69 +143,79 @@
     </header>
 
     <main>
-      <section>
+      <section id="join">
         <div>
-          <div role="img" aria-label="A team expressing good team spirit"></div>
-          <h1>Join</h1>
+          <div class="heading-box">
+            <div
+              role="img"
+              aria-label="teenagers having fun together at the museum"
+            ></div>
+            <h1>Join</h1>
+          </div>
         </div>
-        <div>
-          <label for="event">Event</label>
-          <select name="event" id="event">
-            <option value="yong-stars-club">Yong Stars Club</option>
-            <option value="Night-in-the-museum">Night in the Museum</option>
-            <option value="lecture-in-aeronautics1">
-              Lecture in Aeronautics 11:00
-            </option>
-            <option value="lecture-in-aeronautics2">
-              Lecture in Aeronautics 15:00
-            </option>
-            <option value="lecture-in-aeronautics3">
-              Lecture in Aeronautics 18:00
-            </option>
-            <option value="blue">Blue</option>
-            <option value="black">Black</option>
-          </select>
+        <div class="text-box">
+          <div class="select-wrapper">
+            <label for="event">Event</label>
+            <select required name="event" id="event">
+              <option value="" disabled selected>CHOOSE AN EVENT</option>
+              <option value="yong-stars-club">Yong Stars Club</option>
+              <option value="Night-in-the-museum">Night in the Museum</option>
+              <option value="lecture-in-aeronautics1">
+                Lecture in Aeronautics 11:00
+              </option>
+              <option value="lecture-in-aeronautics2">
+                Lecture in Aeronautics 15:00
+              </option>
+              <option value="lecture-in-aeronautics3">
+                Lecture in Aeronautics 18:00
+              </option>
+              <option value="blue">Blue</option>
+              <option value="black">Black</option>
+            </select>
+            <div class="arrow"></div>
+            <div class="focus-border"></div>
+          </div>
+          <div class="input-with-label">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Fill in your first name"/>
+          </div>
+          <div class="input-with-label">
+            <label for="surname">Surname</label>
+            <input type="text" name="surname" id="surname" placeholder="Fill in your surname" />
+          </div>
+          <div class="input-with-label">
+            <label for="age">Age</label>
+            <input type="text" name="age" id="age" placeholder="Fill in your age" />
+          </div>
+          <div class="input-with-label">
+            <label for="phone-number">Phone Number</label>
+            <input type="text" name="phone-number" id="phone-number" placeholder="Fill in your phone number" />
+          </div>
+          <div class="input-with-label">
+            <label for="e-mail">E-mail</label>
+            <input type="text" name="e-mail" id="e-mail" placeholder="Fill in your e-mail" />
+          </div>
+          <div class="warning-box">
+            <input type="checkbox" name="accept" id="accept" value="accept" />
+            <label for="accept">
+              I have read, understood and accepted CSM’s guidelines for the
+              processing of personal data.
+            </label>
+          </div>
+          <div class="warning-box">
+            <input
+              type="checkbox"
+              name="subscribe"
+              id="subscribe"
+              value="subscribe"
+            />
+            <label for="subscribe">
+              I want to get e-mails about other events that might be interesting
+              for my age-group
+            </label>
+          </div>
+          <a class="button">Join</a>
         </div>
-        <div>
-          <label for="first-name">First Name</label>
-          <input type="text" name="first-name" id="first-name" />
-        </div>
-        <div>
-          <label for="sure-name">Sure Name</label>
-          <input type="text" name="sure-name" id="sure-name" />
-        </div>
-        <div>
-          <label for="age">Age</label>
-          <input type="text" name="age" id="age" />
-        </div>
-        <div>
-          <label for="phone-number">Phone Number</label>
-          <input type="text" name="phone-number" id="phone-number" />
-        </div>
-        <div>
-          <label for="e-mail">E-mail</label>
-          <input type="text" name="e-mail" id="e-mail" />
-        </div>
-        <div>
-          <input type="checkbox" name="accept" id="accept" value="accept" />
-          <label for="accept">
-            I have read, understood and accepted CSM’s guidelines for the
-            processing of personal data.
-          </label>
-        </div>
-        <div>
-          <input
-            type="checkbox"
-            name="subscribe"
-            id="subscribe"
-            value="subscribe"
-          />
-          <label for="subscribe">
-            I want to get e-mails about other events that might be interesting
-            for my age-group
-          </label>
-        </div>
-        <a>Join</a>
       </section>
     </main>
 
@@ -342,7 +357,13 @@
           Vårveien 55,<br />
           1182 Oslo
         </a>
-        <img class="marker-icon" src="./images/marker.svg" height="40" width="33" alt="" />
+        <img
+          class="marker-icon"
+          src="./images/marker.svg"
+          height="40"
+          width="33"
+          alt=""
+        />
       </section>
     </footer>
   </body>
