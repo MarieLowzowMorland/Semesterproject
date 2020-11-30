@@ -20,6 +20,11 @@
       type="text/CSS"
     />
     <link
+      href="./styles/components/form.css"
+      rel="stylesheet"
+      type="text/CSS"
+    />
+    <link
       href="./styles/components/warning-box.css"
       rel="stylesheet"
       type="text/CSS"
@@ -138,67 +143,108 @@
     </header>
 
     <main>
-      <section>
+      <section id="donate">
         <div>
           <div role="img" aria-label="A team expressing good team spirit"></div>
-          <h1>Donate</h1>
+          <div class="width-limit">
+            <div class="heading-box">
+              <h1>Donate</h1>
+            </div>
+            <span class="button"> Support us in other ways </span>
+          </div>
         </div>
 
-        <div>
-          <div>
+        <div class="text-box">
+          <div class="input-with-label">
             <label for="amount">Amount</label>
             <input type="text" name="amount" id="amount" />
           </div>
           <div>
             <input type="radio" name="donation-type" id="once" value="once" />
-            <label for="visa">Once</label>
+            <label for="once">Once</label>
             <input
               type="radio"
               name="donation-type"
               id="monthly"
               value="monthly"
             />
-            <label for="vips">Monthly</label>
+            <label for="monthly">Monthly</label>
           </div>
-          <div>
+          <div class="input-with-label">
             <label for="first-name">First Name</label>
-            <input type="text" name="first-name" id="first-name" />
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="Fill in your first name"
+            />
           </div>
-          <div>
-            <label for="sure-name">Sure Name</label>
-            <input type="text" name="sure-name" id="sure-name" />
+          <div class="input-with-label">
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              placeholder="Fill in your surname"
+            />
+            <label for="surname">Surname</label>
           </div>
-          <div>
+          <div class="input-with-label">
             <label for="address">Address</label>
-            <input type="text" name="address" id="address" />
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Fill in your address"
+            />
           </div>
-          <div>
-            <label for="zip-code">Zip Code</label>
-            <input type="text" name="zip-code" id="zip-code" />
+          <div class="input-with-label">
+            <label for="postal-code">Postal code</label>
+            <input
+              type="text"
+              name="postal-code"
+              id="postal-code"
+              placeholder="Fill in your postal code"
+            />
           </div>
-          <div>
+          <div class="input-with-label">
             <label for="contry">Contry</label>
-            <input type="text" name="contry" id="contry" />
+            <input
+              type="text"
+              name="contry"
+              id="contry"
+              placeholder="Fill in your country"
+            />
           </div>
-          <div>
+          <div class="input-with-label">
             <label for="e-mail">E-mail</label>
-            <input type="text" name="e-mail" id="e-mail" />
+            <input
+              type="text"
+              name="e-mail"
+              id="e-mail"
+              placeholder="Fill in your e-mail"
+            />
           </div>
-          <div>
+          <div class="warning-box">
             <input type="checkbox" name="accept" id="accept" value="accept" />
             <label for="accept">
               I have read, understood and accepted CSM’s guidelines for the
               processing of personal data.
             </label>
           </div>
-          <a href="https://legerutengrenser.no/stott-oss/gi-na" target="_blank">
+          <a
+            class="button"
+            href="https://legerutengrenser.no/stott-oss/gi-na"
+            target="_blank"
+          >
             Donate
           </a>
-          <div>
-            <p>You can also use our account number <span>50100547500</span></p>
-            <p>Or Send your contribution to <span>Vipps number 2177</span></p>
-          </div>
-          <p>Thank you</p>
+        </div>
+        <div class="post-it flex-end text-box">
+          <p>You can also use our account number <em>50100547500</em></p>
+          <p>Or Send your contribution to <em>Vipps number 2177</em></p>
+        </div>
+        <div class="heading-box">
+          <p class="big-heading">Thank you</p>
         </div>
       </section>
     </main>
@@ -341,7 +387,13 @@
           Vårveien 55,<br />
           1182 Oslo
         </a>
-        <img class="marker-icon" src="./images/marker.svg" height="40" width="33" alt="" />
+        <img
+          class="marker-icon"
+          src="./images/marker.svg"
+          height="40"
+          width="33"
+          alt=""
+        />
       </section>
     </footer>
   </body>

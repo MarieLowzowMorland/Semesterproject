@@ -1,3 +1,4 @@
+/* INPUT */
 .input-with-label {
   position: relative;
 }
@@ -24,22 +25,7 @@
   text-transform: uppercase;
 }
 
-.select-wrapper > label,
-.input-with-label > label {
-  position: absolute;
-  z-index: 1;
-  margin-top: 8px;
-  margin-left: 3px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.8rem;
-}
-
-.select-wrapper > label {
-  margin-top: calc(-1.25rem + 3px);
-  margin-left: calc(-0.5rem + 3px);
-}
-
+/* SELECT */
 .select-wrapper {
   position: relative;
   box-sizing: border-box;
@@ -93,4 +79,29 @@
   right: -1px;
   bottom: -1px;
   border: 2px solid black;
+}
+
+/* LABEL */
+input[type="radio"] + label
+.select-wrapper > label,
+.input-with-label > label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.select-wrapper > label,
+.input-with-label > label {
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 0;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.select-wrapper > label {
+  top: 0;
+  padding-top: 3px;
+  padding-left: 3px;
 }

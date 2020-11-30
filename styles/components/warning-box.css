@@ -25,3 +25,14 @@
 .warning-box p {
   margin: 0;
 }
+
+.text-box .warning-box {
+  width: calc(100% + 2rem);
+  margin: 10px 0 10px -1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.text-box .warning-box > input {
+  margin-right: 10px;
+}

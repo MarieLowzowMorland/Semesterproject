@@ -15,17 +15,6 @@
   margin-bottom: 30px;
 }
 
-#join .warning-box {
-  width: calc(100% + 2rem);
-  margin: 10px 0 10px -1rem;
-  padding: 0 1rem;
-  box-sizing: border-box;
-}
-
-#join .warning-box > input {
-  margin-right: 10px;
-}
-
 #join .button{
   width: 100%;
 }

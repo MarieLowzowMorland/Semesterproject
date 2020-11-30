@@ -1,0 +1,40 @@
+#donate > div:first-child {
+  flex: 1 1 auto;
+  background-image: url(../../images/support.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: calc(var(--logo-height) + 145px);
+}
+
+#donate {
+  background-color: var(--section-color-1);
+}
+
+#donate .text-box .button {
+  width: 100%;
+}
+
+#donate .width-limit {
+  max-width: 355px;
+}
+
+#donate .width-limit .button {
+  float: right;
+  margin-bottom: 40px;
+}
+
+#donate > .heading-box {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+#donate > .post-it {
+  background-color: var(--section-color-5);
+  text-transform: uppercase;
+}
+
+#donate > .post-it em {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
