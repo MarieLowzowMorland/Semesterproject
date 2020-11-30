@@ -6,6 +6,7 @@
   background-color: var(--button-color);
   color: var(--button-text-color);
   padding: 20px 0;
+  cursor: pointer;
 }
 
 .button:hover,
