@@ -56,16 +56,18 @@ main > section:not(#exhibition-overview),
   display: flex;
 }
 
-#physics {
+main > section#physics {
   background-image: url(../../images/physics.jpg);
+  background-position-x: left;
 }
 
 #physics .post-it {
   background-color: var(--section-color-1);
 }
 
-#cosmology {
+main > section#cosmology {
   background-image: url(../../images/cosmology.jpg);
+  background-position-x: -160px;
 }
 
 #cosmology .post-it h2,
