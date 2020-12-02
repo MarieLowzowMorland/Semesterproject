@@ -113,3 +113,11 @@ main > section#cosmology {
 #ecology .post-it {
   background-color: var(--section-color-3);
 }
+
+#electricity {
+  background-image: url(../../images/electricity.jpg);
+}
+
+#electricity .post-it {
+  background-color: var(--section-color-9);
+}
