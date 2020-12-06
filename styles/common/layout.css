@@ -146,19 +146,19 @@ main section {
     min-height: 33vh;
   }
 
-  section:first-child {
+  section:first-of-type {
     grid-area: a;
   }
 
-  main > section:not(:first-child) {
+  main > section:not(:first-of-type) {
     background-image: none;
   }
 
-  main > section:not(:first-child):nth-child(odd) {
+  main > section:not(:first-of-type):nth-child(odd) {
     flex-direction: row-reverse;
   }
 
-  main > section:not(:first-child):nth-child(even) {
+  main > section:not(:first-of-type):nth-child(even) {
     flex-direction: row;
   }
 
@@ -184,12 +184,12 @@ main section {
 }
 
 @media screen and (min-width: 1200px) {
-  main > section:not(:first-child):nth-child(n) {
+  main > section:not(:first-of-type):nth-child(n) {
     flex-direction: row;
   }
 
-  main > section:not(:first-child):nth-child(4n),
-  main > section:not(:first-child):nth-child(4n + 1) {
+  main > section:not(:first-of-type):nth-child(4n),
+  main > section:not(:first-of-type:nth-child(4n + 1) {
     flex-direction: row-reverse;
   }
 }
