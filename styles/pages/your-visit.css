@@ -15,11 +15,6 @@ main > section:not(#opening-hours),
   padding: 0;
 }
 
-.post-it {
-  padding: 10px;
-  box-sizing: border-box;
-}
-
 #opening-hours > div:first-child {
   background-image: url(../../images/museum.jpg);
   padding-top: calc(var(--logo-height) + 40px);
@@ -64,4 +59,26 @@ main > section:not(#opening-hours),
 
 #accessibility .post-it {
   background-color: var(--section-color-6);
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    display: grid;
+    grid-template:
+      "a"
+      "." 1fr
+      "." 1fr
+      "." 1fr
+      "." 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    grid-template:
+      "a a"
+      ". ." 1fr
+      ". ." 1fr
+      /1fr 1fr;
+  }
 }

@@ -31,3 +31,69 @@
 #internship .text-box {
   background-color: var(--section-color-3);
 }
+
+@media screen and (min-width: 900px) {
+  main {
+    display: grid;
+    grid-template:
+      "a"
+      "." 1fr
+      "." 1fr;
+  }
+
+  main > section:not(:first-child) > * {
+    flex: 0 1 50vw;
+  }
+
+  .text-box {
+    padding: var(--grid-post-it-padding);
+  }
+
+  #support .text-box {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #support .text-box > div {
+    flex: 0 1 50%;
+    margin-right: var(--grid-post-it-padding);
+  }
+
+  #support .text-box > div:last-child {
+    margin: 0 0 0 var(--grid-post-it-padding);
+  }
+
+  .button {
+    width: 100%;
+    min-width: inherit;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    grid-template:
+      "a a"
+      ". ." 1fr
+      /1fr 1fr;
+  }
+
+  main > section:not(:first-child) > * {
+    flex: 0 1 25vw;
+  }
+
+  #support {
+    flex-direction: row;
+  }
+
+  #support > div:first-child {
+    flex: 0 0 75vw;
+  }
+
+  #support .text-box {
+    display: block;
+  }
+
+  #support .text-box > div {
+    margin: 0 !important;
+  }
+}

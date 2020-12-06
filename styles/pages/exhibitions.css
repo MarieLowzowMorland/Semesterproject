@@ -11,6 +11,7 @@
   padding: 10px;
 }
 
+main .img,
 main > section:not(#exhibition-overview),
 #exhibition-overview > div:first-child {
   flex: 1 1 auto;
@@ -37,16 +38,19 @@ main > section:not(#exhibition-overview),
   margin-right: 1rem;
 }
 
-#covid {
+#covid,
+#covid .img {
   background-image: url(../../images/covid.jpg);
 }
 
 #covid .post-it {
+  height: initial;
   background-color: var(--section-color-5);
   flex-direction: column-reverse;
 }
 
-#robotics {
+#robotics,
+#robotics .img {
   background-image: url(../../images/robotics.jpg);
 }
 
@@ -56,7 +60,8 @@ main > section:not(#exhibition-overview),
   display: flex;
 }
 
-main > section#physics {
+main > section#physics,
+#physics .img {
   background-image: url(../../images/physics.jpg);
   background-position-x: left;
 }
@@ -70,6 +75,10 @@ main > section#cosmology {
   background-position-x: -160px;
 }
 
+#cosmology .img {
+  background-image: url(../../images/cosmology.jpg);
+}
+
 #cosmology .post-it h2,
 #cosmology .post-it {
   background-color: var(--section-color-7);
@@ -81,7 +90,8 @@ main > section#cosmology {
   display: flex;
 }
 
-#body {
+#body,
+#body .img {
   background-image: url(../../images/medic.jpg);
 }
 
@@ -91,7 +101,8 @@ main > section#cosmology {
   color: var(--text-color-2);
 }
 
-#chemestry {
+#chemestry,
+#chemestry .img {
   background-image: url(../../images/chemestry.jpg);
 }
 
@@ -106,7 +117,8 @@ main > section#cosmology {
   display: flex;
 }
 
-#ecology {
+#ecology,
+#ecology .img {
   background-image: url(../../images/ecology.jpg);
 }
 
@@ -114,10 +126,59 @@ main > section#cosmology {
   background-color: var(--section-color-3);
 }
 
-#electricity {
+#electricity,
+#electricity .img {
   background-image: url(../../images/electricity.jpg);
 }
 
 #electricity .post-it {
   background-color: var(--section-color-9);
+}
+
+.post-it > div:first-child {
+  padding: 40px;
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    display: grid;
+    grid-template:
+      "a"
+      "." 1fr
+      "." 1fr
+      "." 1fr
+      "." 1fr
+      "." 1fr
+      "." 1fr
+      "." 1fr
+      "." 1fr;
+  }
+
+
+  #covid .post-it > div:first-child {
+    flex-grow: 1;
+  }
+
+  .post-it > div:first-child {
+    padding: 0;
+  }
+
+  .post-it > .info-label {
+    margin-left: calc(-1 * var(--grid-post-it-padding, 0));
+    margin-top: calc(-1 * var(--grid-post-it-padding, 0));
+    margin-bottom: calc(var(--grid-post-it-padding, 0) / 2);
+    width: calc(100% + var(--grid-post-it-padding, 0) * 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    grid-template:
+      "a a"
+      ". ." 1fr
+      ". ." 1fr
+      ". ." 1fr
+      ". ." 1fr
+      /1fr 1fr;
+  }
 }

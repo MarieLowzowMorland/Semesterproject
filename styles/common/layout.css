@@ -17,12 +17,12 @@ body {
   box-shadow: 0px 3px 6px #00000029;
 }
 
-.post-it p img{
+.post-it p img {
   vertical-align: middle;
 }
 
 .text-box {
-  padding: 1rem;
+  padding: 10px;
   box-sizing: border-box;
 }
 
@@ -35,6 +35,9 @@ body {
   position: relative;
   max-width: 355px;
   box-shadow: 0px 3px 6px #00000029;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .info-label {
@@ -70,7 +73,7 @@ main section {
   box-sizing: border-box;
 }
 
-.block{
+.block {
   display: block;
 }
 
@@ -126,4 +129,67 @@ main section {
 .top-link svg {
   height: 100%;
   width: auto;
+}
+
+@media screen and (max-width: 899px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .tablet-hidden {
+    display: none;
+  }
+
+  main section {
+    min-height: 33vh;
+  }
+
+  section:first-child {
+    grid-area: a;
+  }
+
+  main > section:not(:first-child) {
+    background-image: none;
+  }
+
+  main > section:not(:first-child):nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  main > section:not(:first-child):nth-child(even) {
+    flex-direction: row;
+  }
+
+  main .post-it,
+  main .img {
+    height: 100%;
+    max-width: 50%;
+  }
+
+  .square-enforcer {
+    display: block;
+    padding-top: 50%;
+  }
+
+  .flex-grow {
+    flex-grow: initial;
+  }
+
+  .post-it {
+    padding: var(--grid-post-it-padding);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main > section:not(:first-child):nth-child(n) {
+    flex-direction: row;
+  }
+
+  main > section:not(:first-child):nth-child(4n),
+  main > section:not(:first-child):nth-child(4n + 1) {
+    flex-direction: row-reverse;
+  }
 }
