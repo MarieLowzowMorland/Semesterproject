@@ -15,10 +15,6 @@
   width: 100%;
 }
 
-#donate .width-limit {
-  max-width: 355px;
-}
-
 #donate .width-limit .button {
   float: right;
   margin-bottom: 40px;

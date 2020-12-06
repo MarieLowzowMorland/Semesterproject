@@ -30,6 +30,10 @@ body {
   margin-top: 0;
 }
 
+.width-limit {
+  max-width: 355px;
+}
+
 .heading-box {
   background-color: var(--heading-background);
   position: relative;
