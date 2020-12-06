@@ -18,6 +18,12 @@ a:hover path {
   fill: var(--link-hover-color);
 }
 
+a.top-link:focus path,
+a.top-link:hover path {
+  fill: inherit;
+  stroke: var(--link-hover-color);
+}
+
 h1,
 h2,
 h3,
