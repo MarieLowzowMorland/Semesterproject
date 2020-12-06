@@ -53,6 +53,7 @@ body {
   min-height: 2.5rem;
   padding: 0 10px;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .info-label p {
@@ -71,6 +72,7 @@ ul {
 }
 
 main section {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -193,7 +195,7 @@ main section {
   }
 
   main > section:not(:first-of-type):nth-child(4n),
-  main > section:not(:first-of-type:nth-child(4n + 1) {
+  main > section:not(:first-of-type):nth-child(4n + 1) {
     flex-direction: row-reverse;
   }
 }
