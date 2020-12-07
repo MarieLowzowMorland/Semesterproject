@@ -137,15 +137,19 @@ main section {
   width: auto;
 }
 
+.desktop-shown {
+  display: none;
+}
+
 @media screen and (max-width: 899px) {
   .mobile-hidden {
-    display: none;
+    display: none !important;
   }
 }
 
 @media screen and (min-width: 900px) {
   .tablet-hidden {
-    display: none;
+    display: none !important;
   }
 
   main section {
@@ -190,6 +194,10 @@ main section {
 }
 
 @media screen and (min-width: 1200px) {
+  .desktop-shown {
+    display: block;
+  }
+
   main > section:not(:first-of-type):nth-child(n) {
     flex-direction: row;
   }
