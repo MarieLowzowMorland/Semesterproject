@@ -74,6 +74,7 @@
   color: white;
   background-color: black;
 }
+
 #menu li a.active{
   color: var(--link-color);
   background-color: black;
@@ -87,5 +88,41 @@
 @keyframes slide-from-top {
   100% {
     transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #menu-button{
+    display: none;
+  }
+
+  #menu{
+    display: block;
+    transform: none;
+    width: calc(100vw - var(--logo-height) - 20px);
+  }
+
+  #menu ul {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+  }
+
+  #menu li {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  #menu li a {
+    color: var(--text-color-2);
+    padding: 0;
+  }
+
+  #menu li a:hover,
+  #menu li a:focus {
+    color: var(--link-color);
   }
 }
