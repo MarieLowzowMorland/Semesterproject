@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Community Sience Museum|Donate</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta
       name="description"
       content="The donate page for Community Sience Museum."
@@ -159,107 +159,113 @@
           </div>
         </div>
 
-        <div class="text-box">
-          <div class="input-with-label">
-            <label for="amount">Amount</label>
-            <input
-              type="text"
-              name="amount"
-              id="amount"
-              placeholder="Fill in your the amount you want to donate"
-            />
+        <div id="donate-form">
+          <div class="text-box">
+            <div class="input-with-label">
+              <label for="amount">Amount</label>
+              <input
+                type="text"
+                name="amount"
+                id="amount"
+                placeholder="Fill in your the amount you want to donate"
+              />
+            </div>
+            <fieldset>
+              <legend class="screen-reader-only">
+                Choose payment frequency
+              </legend>
+              <input type="radio" name="donation-type" id="once" value="once" />
+              <label for="once">Once</label>
+              <input
+                type="radio"
+                name="donation-type"
+                id="monthly"
+                value="monthly"
+              />
+              <label for="monthly">Monthly</label>
+            </fieldset>
+            <div class="input-with-label">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="Fill in your first name"
+              />
+            </div>
+            <div class="input-with-label">
+              <input
+                type="text"
+                name="surname"
+                id="surname"
+                placeholder="Fill in your surname"
+              />
+              <label for="surname">Surname</label>
+            </div>
+            <div class="input-with-label">
+              <label for="address">Address</label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Fill in your address"
+              />
+            </div>
+            <div class="input-with-label">
+              <label for="postal-code">Postal code</label>
+              <input
+                type="text"
+                name="postal-code"
+                id="postal-code"
+                placeholder="Fill in your postal code"
+              />
+            </div>
+            <div class="input-with-label">
+              <label for="contry">Contry</label>
+              <input
+                type="text"
+                name="contry"
+                id="contry"
+                placeholder="Fill in your country"
+              />
+            </div>
+            <div class="input-with-label">
+              <label for="e-mail">E-mail</label>
+              <input
+                type="text"
+                name="e-mail"
+                id="e-mail"
+                placeholder="Fill in your e-mail"
+              />
+            </div>
+            <div class="warning-box">
+              <input type="checkbox" name="accept" id="accept" value="accept" />
+              <label for="accept">
+                I have read, understood and accepted CSM’s guidelines for the
+                processing of personal data.
+              </label>
+            </div>
+            <a
+              class="button"
+              href="https://legerutengrenser.no/stott-oss/gi-na"
+              target="_blank"
+            >
+              Donate
+            </a>
+            <div id="donate-info">
+              <p>You can also use our account number <em>50100547500</em></p>
+              <p>Or Send your contribution to <em>Vipps number 2177</em></p>
+            </div>
           </div>
-          <fieldset>
-            <legend class="screen-reader-only">Choose payment frequency</legend>
-            <input type="radio" name="donation-type" id="once" value="once" />
-            <label for="once">Once</label>
-            <input
-              type="radio"
-              name="donation-type"
-              id="monthly"
-              value="monthly"
-            />
-            <label for="monthly">Monthly</label>
-          </fieldset>
-          <div class="input-with-label">
-            <label for="first-name">First Name</label>
-            <input
-              type="text"
-              name="first-name"
-              id="first-name"
-              placeholder="Fill in your first name"
-            />
+          <div class="heading-box">
+            <p class="big-heading">Thank you</p>
           </div>
-          <div class="input-with-label">
-            <input
-              type="text"
-              name="surname"
-              id="surname"
-              placeholder="Fill in your surname"
-            />
-            <label for="surname">Surname</label>
-          </div>
-          <div class="input-with-label">
-            <label for="address">Address</label>
-            <input
-              type="text"
-              name="address"
-              id="address"
-              placeholder="Fill in your address"
-            />
-          </div>
-          <div class="input-with-label">
-            <label for="postal-code">Postal code</label>
-            <input
-              type="text"
-              name="postal-code"
-              id="postal-code"
-              placeholder="Fill in your postal code"
-            />
-          </div>
-          <div class="input-with-label">
-            <label for="contry">Contry</label>
-            <input
-              type="text"
-              name="contry"
-              id="contry"
-              placeholder="Fill in your country"
-            />
-          </div>
-          <div class="input-with-label">
-            <label for="e-mail">E-mail</label>
-            <input
-              type="text"
-              name="e-mail"
-              id="e-mail"
-              placeholder="Fill in your e-mail"
-            />
-          </div>
-          <div class="warning-box">
-            <input type="checkbox" name="accept" id="accept" value="accept" />
-            <label for="accept">
-              I have read, understood and accepted CSM’s guidelines for the
-              processing of personal data.
-            </label>
-          </div>
-          <a
-            class="button"
-            href="https://legerutengrenser.no/stott-oss/gi-na"
-            target="_blank"
-          >
-            Donate
-          </a>
-          <p>You can also use our account number <em>50100547500</em></p>
-          <p>Or Send your contribution to <em>Vipps number 2177</em></p>
-        </div>
-        <div class="heading-box">
-          <p class="big-heading">Thank you</p>
         </div>
       </section>
     </main>
 
     <footer>
-     <div>
+      <div>
         <section>
           <h2>Follow us</h2>
           <div class="social-media">
@@ -407,7 +413,12 @@
           </div>
         </section>
         <div>
-          <div id="footer-map" class="desktop-shown" role="img" aria-label="map where to find the museum"></div>
+          <div
+            id="footer-map"
+            class="desktop-shown"
+            role="img"
+            aria-label="map where to find the museum"
+          ></div>
         </div>
       </div>
       <div class="warning-box mobile-hidden">

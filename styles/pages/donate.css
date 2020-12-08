@@ -20,11 +20,65 @@
   margin-bottom: 40px;
 }
 
-#donate > .heading-box {
+#donate-form .heading-box {
   margin-top: 40px;
   margin-bottom: 80px;
 }
 
 #donate em {
+  display: block;
   font-weight: bold;
+}
+
+@media screen and (min-width: 900px) {
+  #donate .text-box {
+    width: 80%;
+    padding: 0;
+    margin: 40px 10% 0;
+  }
+
+  #donate .text-box .warning-box {
+    width: 100vw;
+    margin: 10px 0 10px -10vw;
+  }
+
+  #donate-form .heading-box {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #donate {
+    flex-direction: row;
+  }
+
+  #donate > * {
+    flex: 0 0 50%;
+  }
+
+  #donate .text-box {
+    margin-top: 80px;
+  }
+
+  #donate .text-box .warning-box {
+    width: 50vw;
+    margin: 10px 0 10px -5vw;
+  }
+
+  #donate-form{
+    position: relative;
+  }
+
+
+  #donate-info{
+    margin-bottom: 50px;
+  }
+
+  #donate-info,
+  #donate-form .heading-box { 
+    max-width: 50%;
+  }
 }
