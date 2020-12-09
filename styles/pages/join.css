@@ -7,14 +7,67 @@
   padding-top: calc(var(--logo-height) + 145px);
 }
 
-#join .text-box {
-  background-color: var(--section-color-1);
+#join .join-form {
+  background-color: var(--section-color-10);
 }
 
-#join .text-box > div:first-child{
+#join .text-box > div:first-child {
   margin-bottom: 30px;
 }
 
-#join .button{
+#join .button {
   width: 100%;
+  margin-bottom: 40px;
+}
+
+.input-with-label > input,
+.select-wrapper {
+  border: 2px solid var(--section-color-10);
+}
+
+@media screen and (min-width: 900px) {
+  #join .text-box {
+    width: 80%;
+    padding: 0;
+    margin: 40px 10% 0;
+  }
+
+  #join .text-box .warning-box {
+    width: 100vw;
+    margin: 10px 0 10px -10vw;
+  }
+
+  #join-form .heading-box {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #join {
+    flex-direction: row;
+  }
+
+  #join > * {
+    flex: 0 0 50%;
+  }
+
+  #join .text-box {
+    margin-top: 80px;
+  }
+
+  #join .text-box .warning-box {
+    width: 50vw;
+    margin: 10px 0 10px -5vw;
+  }
+
+  #join-form {
+    position: relative;
+  }
+
+  #join > div:first-child {
+    padding-top: calc(var(--logo-height) + 330px);
+  }
 }
