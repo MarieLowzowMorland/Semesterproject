@@ -20,19 +20,23 @@ main > section:not(#opening-hours),
   padding-top: calc(var(--logo-height) + 40px);
 }
 
-#opening-hours .post-it {
-  background-color: var(--section-color-8);
+#opening-hours .text-box h2,
+#opening-hours .text-box {
+  background-color: var(--section-color-7);
+  color: var(--text-color-2);
 }
 
-#location {
-  background-image: url(../../images/map\ kopi.jpg);
+#location,
+#location .img {
+  background-image: url(../../images/map-footer.jpg);
 }
 
 #location .post-it {
   background-color: var(--section-color-9);
 }
 
-#café {
+#café,
+#café .img {
   background-image: url(../../images/cafe.jpg);
 }
 
@@ -45,15 +49,17 @@ main > section:not(#opening-hours),
   padding-bottom: 10px;
 }
 
-#shop {
-  background-image: url(../../images/shop.jpg);
+#shop,
+#shop .img {
+  background-image: url(../../images/shop-open.jpg);
 }
 
 #shop .post-it {
   background-color: var(--section-color-3);
 }
 
-#accessibility {
+#accessibility,
+#accessibility .img {
   background-image: url(../../images/accsessibility.jpg);
 }
 
@@ -71,6 +77,21 @@ main > section:not(#opening-hours),
       "." 1fr
       "." 1fr;
   }
+
+  section:not(:first-child) {
+    background-image: none !important;
+  }
+
+  section:not(:first-child) > .img,
+  section:not(:first-child) > .post-it {
+    flex: 0 0 50%;
+  }
+
+  section:not(:first-child) > .img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -80,5 +101,25 @@ main > section:not(#opening-hours),
       ". ." 1fr
       ". ." 1fr
       /1fr 1fr;
+  }
+  #opening-hours {
+    flex-direction: row;
+  }
+
+  #opening-hours .warning-box {
+    width: 25vh;
+  }
+
+  #opening-hours > div:first-child {
+    flex: 0 0 75vw;
+  }
+
+  #opening-hours .text-box {
+    display: block;
+    padding: 80px 40px 40px;
+  }
+
+  #opening-hours .text-box > div {
+    margin: 0 !important;
   }
 }
