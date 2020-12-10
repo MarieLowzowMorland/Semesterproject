@@ -36,6 +36,7 @@ main > section:not(#exhibition-overview),
 #exhibition-overview ul {
   float: right;
   margin-right: 1rem;
+  margin-bottom: 40px;
 }
 
 #covid,
