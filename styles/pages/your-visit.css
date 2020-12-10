@@ -6,6 +6,10 @@ main > section:not(#opening-hours),
   background-repeat: no-repeat;
 }
 
+.post-it{
+  padding: 15px;
+}
+
 .post-it svg {
   display: inline;
   margin-left: 10px;
@@ -33,6 +37,7 @@ main > section:not(#opening-hours),
 
 #location .post-it {
   background-color: var(--section-color-9);
+  align-self: flex-end;
 }
 
 #café,
@@ -56,6 +61,7 @@ main > section:not(#opening-hours),
 
 #shop .post-it {
   background-color: var(--section-color-3);
+  align-self: flex-end;
 }
 
 #accessibility,
@@ -76,6 +82,11 @@ main > section:not(#opening-hours),
       "." 1fr
       "." 1fr
       "." 1fr;
+  }
+
+
+  .post-it {
+    padding: var(--grid-post-it-padding);
   }
 
   section:not(:first-child) {
@@ -106,10 +117,6 @@ main > section:not(#opening-hours),
     flex-direction: row;
   }
 
-  #opening-hours .warning-box {
-    width: 25vh;
-  }
-
   #opening-hours > div:first-child {
     flex: 0 0 75vw;
   }
@@ -119,7 +126,8 @@ main > section:not(#opening-hours),
     padding: 80px 40px 40px;
   }
 
-  #opening-hours .text-box > div {
-    margin: 0 !important;
+  #opening-hours .text-box > .warning-box {
+    width: 25vw;
+    margin-left: -40px;
   }
 }
