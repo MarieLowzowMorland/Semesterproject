@@ -1,7 +1,4 @@
-#explore > div:first-child,
-#kids > div:first-child,
-#teacher > div:first-child,
-#researcher > div:first-child {
+section > div:first-child {
   flex: 1 1 calc(var(--logo-height) + 85px);
   background-size: cover;
   background-position: center;
@@ -13,6 +10,11 @@
   padding-top: calc(var(--logo-height) + 150px);
 }
 
+#CSM > div:first-child {
+  background-image: url(../../images/museum.jpg);
+}
+
+#CSM .text-box,
 #explore .text-box {
   background-color: var(--section-color-5);
 }
@@ -41,4 +43,59 @@
 
 #researcher .text-box {
   background-color: var(--section-color-6);
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    display: grid;
+    grid-template:
+      "a"
+      "." 1fr
+      "." 1fr
+      "." 1fr
+      "." 1fr;
+  }
+
+  section:not(:first-child) .img,
+  section:not(:first-child) .text-box {
+    flex: 0 0 50%;
+  }
+
+  section:not(:first-child) .text-box {
+    padding: var(--grid-post-it-padding);
+    box-sizing: border-box;
+  }
+
+  .button {
+    width: 100%;
+    min-width: inherit;
+  }
+
+
+  main > section:not(:first-of-type):nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  main > section:not(:first-of-type):nth-child(even) {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  main {
+    grid-template:
+      "a a"
+      ". ." 1fr
+      ". ." 1fr
+      /1fr 1fr;
+  }
+  
+  main > section:not(:first-of-type):nth-child(n) {
+    flex-direction: row;
+  }
+
+  main > section:not(:first-of-type):nth-child(4n),
+  main > section:not(:first-of-type):nth-child(4n + 1) {
+    flex-direction: row-reverse;
+  }
 }
