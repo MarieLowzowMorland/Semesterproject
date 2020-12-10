@@ -162,6 +162,7 @@ main section {
 
   main > section:not(:first-of-type) {
     background-image: none;
+    height: 100%;
   }
 
   main > section:not(:first-of-type):nth-child(odd) {
