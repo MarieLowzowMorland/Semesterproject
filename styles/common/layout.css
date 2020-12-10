@@ -115,11 +115,6 @@ main section {
   flex-basis: auto;
 }
 
-.basis-50{ /*ubrukt*/
-  min-height: 50px;
-  flex-basis: 50px;
-}
-
 .basis-100{
   min-height: 100px;
   flex-basis: 100px;
@@ -130,7 +125,7 @@ main section {
   flex-basis: 150px;
 }
 
-.basis-200{/*ubrukt*/
+.basis-200{
   min-height: 200px;
   flex-basis: 200px;
 }
@@ -138,6 +133,11 @@ main section {
 .basis-250{
   min-height: 250px;
   flex-basis: 250px;
+}
+
+.basis-300{
+  min-height: 300px;
+  flex-basis: 300px;
 }
 
 .flex-column {
