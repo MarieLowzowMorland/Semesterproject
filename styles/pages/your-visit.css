@@ -6,7 +6,7 @@ main > section:not(#opening-hours),
   background-repeat: no-repeat;
 }
 
-.post-it{
+.post-it {
   padding: 15px;
 }
 
@@ -84,7 +84,6 @@ main > section:not(#opening-hours),
       "." 1fr;
   }
 
-
   .post-it {
     padding: var(--grid-post-it-padding);
   }
@@ -118,7 +117,7 @@ main > section:not(#opening-hours),
   }
 
   #opening-hours > div:first-child {
-    flex: 0 0 75vw;
+    flex: 0 0 75%;
   }
 
   #opening-hours .text-box {
@@ -127,7 +126,7 @@ main > section:not(#opening-hours),
   }
 
   #opening-hours .text-box > .warning-box {
-    width: 25vw;
+    width: calc(100% + 80px);
     margin-left: -40px;
   }
 }
