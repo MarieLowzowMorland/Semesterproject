@@ -21,7 +21,7 @@
   margin-top: 3rem;
 }
 
-#welcome-section{
+#welcome-section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -97,32 +97,36 @@
 }
 
 @media screen and (min-width: 900px) {
+  main section {
+    min-height: 400px;
+  }
+
   .heading-box,
   .width-limit {
     width: 45vw;
     max-width: 600px;
   }
 
-  #opening-hours{
+  #opening-hours {
     display: flex;
     flex-direction: column-reverse;
     background-color: inherit;
   }
 
-  #opening-hours .text-box{
+  #opening-hours .text-box {
     background-color: black;
     width: fit-content;
     padding: 20px;
   }
 
-  main > section:first-of-type{
-      min-height: 100vh;
+  main > section:first-of-type {
+    min-height: 100vh;
   }
 
-  main > section:not(:first-of-type):not(:last-of-type) > *{
-      flex: 0 1 50%;
+  main > section:not(:first-of-type):not(:last-of-type) > * {
+    flex: 0 1 50%;
   }
-  
+
   main > section:not(:first-of-type):nth-child(odd) {
     flex-direction: row;
   }
@@ -131,7 +135,7 @@
     flex-direction: row-reverse;
   }
 
-  main > section:not(:first-of-type) .post-it{
+  main > section:not(:first-of-type) .post-it {
     position: absolute;
     top: 40px;
     left: 40vw;
@@ -142,55 +146,55 @@
     flex-direction: column-reverse;
   }
 
-  main > section:not(:first-of-type):nth-child(even) .post-it{
+  main > section:not(:first-of-type):nth-child(even) .post-it {
     left: 25vw;
   }
 
-  main > section:not(:first-of-type) .post-it > .info-label{
+  main > section:not(:first-of-type) .post-it > .info-label {
     width: calc(100% + 20px);
     margin: -10px 0 10px -10px;
   }
 
-  main > section:not(:first-of-type) .text-box{
+  main > section:not(:first-of-type) .text-box {
     display: flex;
     justify-content: flex-end;
   }
 
-  main > section:not(:first-of-type):nth-child(even) .text-box{
+  main > section:not(:first-of-type):nth-child(even) .text-box {
     justify-content: flex-start;
   }
 
-  main > section:not(:first-of-type) .text-box > div{
+  main > section:not(:first-of-type) .text-box > div {
     width: 50%;
     padding: 40px;
     box-sizing: border-box;
   }
 
-  #see-all-exhibitions{
+  #see-all-exhibitions {
     min-height: 100vh;
     flex-direction: row;
   }
 
-  #see-all-exhibitions .heading-box{
+  #see-all-exhibitions .heading-box {
     align-self: flex-start;
     margin-top: 15%;
   }
 
-  #see-all-exhibitions ul{
+  #see-all-exhibitions ul {
     margin-right: 15vw;
     align-self: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .post-it h2{
+  .post-it h2 {
     font-size: 3rem;
     word-break: break-word;
-    max-height: 25vh;
+    max-height: 250px;
     overflow-y: auto;
   }
 
-  .heading-box h2{
+  .heading-box h2 {
     font-size: 4rem;
   }
 }
