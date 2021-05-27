@@ -49,6 +49,12 @@ input {
   appearance: none;
 }
 
+input[type="radio"] {
+  width: auto;
+  -webkit-appearance: auto;
+  appearance: auto;
+}
+
 button[type="submit"] {
   margin-right: 3rem;
 }

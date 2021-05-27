@@ -33,19 +33,6 @@
   padding-top: var(--logo-height);
 }
 
-#opening-hours h2 {
-  margin-top: 0;
-}
-
-#opening-hours {
-  background-color: var(--section-color-7);
-  color: var(--text-color-2);
-}
-
-#opening-hours .warning-box {
-  margin: 0;
-}
-
 #visiting-professor > div:first-child {
   background-image: url(../../images/cosmology.jpg);
 }
@@ -105,18 +92,6 @@
   .width-limit {
     width: 45vw;
     max-width: 600px;
-  }
-
-  #opening-hours {
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: inherit;
-  }
-
-  #opening-hours .text-box {
-    background-color: black;
-    width: fit-content;
-    padding: 20px;
   }
 
   main > section:first-of-type {

@@ -1,5 +1,21 @@
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, 
+footer {
+  flex: 0 0 auto;
+}
+
+main {
+  flex: 1 0 auto;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 :focus, :focus-visible {
@@ -74,6 +90,7 @@ ul {
 main section {
   position: relative;
   min-height: 100vh;
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;

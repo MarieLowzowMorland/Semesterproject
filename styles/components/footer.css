@@ -44,7 +44,7 @@ footer .marker-icon {
 
 @media screen and (min-width: 900px) {
   footer {
-    min-height: inherit;
+    min-height: auto;
   }
 
   footer > div:first-child {
