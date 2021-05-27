@@ -169,91 +169,103 @@
               where you’ll get to explore and experiment with our team of
               experts.
             </p>
-            <div class="select-wrapper">
-              <label for="event">Event</label>
-              <select required name="event" id="event">
-                <option value="" disabled selected>Choose an event</option>
-                <option value="yong-stars-club">Yong Stars Club</option>
-                <option value="Night-in-the-museum">Night in the Museum</option>
-                <option value="lecture-in-aeronautics1">
-                  Lecture in Aeronautics 11:00
-                </option>
-                <option value="lecture-in-aeronautics2">
-                  Lecture in Aeronautics 15:00
-                </option>
-                <option value="lecture-in-aeronautics3">
-                  Lecture in Aeronautics 18:00
-                </option>
-                <option value="blue">Holiday club</option>
-              </select>
-              <div class="arrow"></div>
-              <div class="focus-border"></div>
-            </div>
-            <div class="input-with-label">
-              <label for="first-name">First Name</label>
-              <input
-                type="text"
-                name="first-name"
-                id="first-name"
-                placeholder="Fill in your first name"
-              />
-            </div>
-            <div class="input-with-label">
-              <label for="surname">Surname</label>
-              <input
-                type="text"
-                name="surname"
-                id="surname"
-                placeholder="Fill in your surname"
-              />
-            </div>
-            <div class="input-with-label">
-              <label for="age">Age</label>
-              <input
-                type="text"
-                name="age"
-                id="age"
-                placeholder="Fill in your age"
-              />
-            </div>
-            <div class="input-with-label">
-              <label for="phone-number">Phone Number</label>
-              <input
-                type="text"
-                name="phone-number"
-                id="phone-number"
-                placeholder="Fill in your phone number"
-              />
-            </div>
-            <div class="input-with-label">
-              <label for="e-mail">E-mail</label>
-              <input
-                type="text"
-                name="e-mail"
-                id="e-mail"
-                placeholder="Fill in your e-mail"
-              />
-            </div>
-            <div class="warning-box">
-              <input type="checkbox" name="accept" id="accept" value="accept" />
-              <label for="accept">
-                I have read, understood and accepted CSM’s guidelines for the
-                processing of personal data.
-              </label>
-            </div>
-            <div class="warning-box">
-              <input
-                type="checkbox"
-                name="subscribe"
-                id="subscribe"
-                value="subscribe"
-              />
-              <label for="subscribe">
-                I want to get e-mails about other events that might be
-                interesting for my age-group
-              </label>
-            </div>
-            <span class="button">Join</span>
+            <p>
+              In the form below all fields are mandatory unless they are marked as optional.
+            </p>
+            <form id="join-form">
+              <div class="input-with-label select">
+                <label for="event">Event</label>
+                <select required name="event" id="event">
+                  <option value="" disabled selected>Choose an event</option>
+                  <option value="yong-stars-club">Yong Stars Club</option>
+                  <option value="Night-in-the-museum">Night in the Museum</option>
+                  <option value="lecture-in-aeronautics-11:00">
+                    Lecture in Aeronautics 11:00
+                  </option>
+                  <option value="lecture-in-aeronautics-15:00">
+                    Lecture in Aeronautics 15:00
+                  </option>
+                  <option value="lecture-in-aeronautics-18:00">
+                    Lecture in Aeronautics 18:00
+                  </option>
+                  <option value="holiday-club">Holiday club</option>
+                </select>
+              </div>
+              <div class="input-with-label">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  placeholder="Fill in your first name"
+                  required
+                />
+              </div>
+              <div class="input-with-label">
+                <label for="surname">Surname</label>
+                <input
+                  type="text"
+                  name="surname"
+                  id="surname"
+                  placeholder="Fill in your surname"
+                  required
+                />
+              </div>
+              <div class="input-with-label">
+                <label for="age">Age (Optional)</label>
+                <input
+                  type="text"
+                  name="age"
+                  id="age"
+                  placeholder="Fill in your age"
+                />
+              </div>
+              <div class="input-with-label">
+                <label for="phone-number">Phone Number (Optional)</label>
+                <input
+                  type="text"
+                  name="phone-number"
+                  id="phone-number"
+                  placeholder="Fill in your phone number"
+                />
+              </div>
+              <div class="input-with-label">
+                <label for="e-mail">E-mail</label>
+                <input
+                  type="text"
+                  name="e-mail"
+                  id="e-mail"
+                  placeholder="Fill in your e-mail"
+                  required
+                />
+              </div>
+              <div>
+                <input 
+                  type="checkbox" 
+                  name="reading guidelines" 
+                  id="accept" 
+                  value="accept" 
+                  required
+                />
+                <label for="accept">
+                  I have read, understood and accepted CSM’s guidelines for the
+                  processing of personal data.
+                </label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="subscribe"
+                  id="subscribe"
+                  value="subscribe"
+                />
+                <label for="subscribe">
+                  I want to get e-mails about other events that might be
+                  interesting for my age-group
+                </label>
+              </div>
+              <button type="submit" class="button" formnovalidate>Join</button>
+          </form>
           </div>
         </div>
       </section>
@@ -436,5 +448,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/pages/join.js" type="module"></script>
   </body>
 </html>

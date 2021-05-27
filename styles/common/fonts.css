@@ -65,3 +65,7 @@ h2 {
 .text-color-2 {
   color: var(--text-color-2);
 }
+
+p {
+  max-width: 35rem;
+}

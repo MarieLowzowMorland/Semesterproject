@@ -33,7 +33,7 @@
   box-sizing: border-box;
 }
 
-.text-box .warning-box > input {
+.text-box .warning-box input {
   flex-shrink: 0;
   margin-right: 15px;
 }

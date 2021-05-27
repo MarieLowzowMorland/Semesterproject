@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+:focus, :focus-visible {
+  outline: 2px solid var(--link-hover-color);
+  } 
+
 .screen-reader-only {
   position: absolute !important;
   left: 0 !important;
@@ -59,10 +63,6 @@ body {
 .info-label p {
   position: relative;
   width: 80%;
-}
-
-*:focus {
-  outline: none;
 }
 
 ul {

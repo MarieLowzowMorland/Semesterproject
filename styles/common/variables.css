@@ -12,7 +12,14 @@
   --section-color-8: #D1423D;
   --section-color-9: #fdea44;
   --section-color-10: #1C827D;
+
+  /* shadow effects */
+  --thick-shadow: 2px 2px 6px #00000046;
+  --thin-shadow: 0px 3px 6px #00000029;
   
+  /* user message */
+  --message-bg: #ffffff;
+  --message-text: #222222;
 
   /*button*/
   --button-color: #000000;
@@ -25,6 +32,9 @@
   --cosmology-text-color: #c9a049;
   --link-color: #fdea44;
   --heading-color: #000000;
+
+  --error-bg: #fff0f2;
+  --error: #D1423D;
 
   /*warning-box*/
   --worning-text-color: #cc040a;
