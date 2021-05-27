@@ -1,3 +1,10 @@
+@import "../common/variables.css";
+@import "../common/fonts.css";
+@import "../common/layout.css";
+@import "../components/buttons.css";
+@import "../components/footer.css";
+@import "../components/header.css";
+
 #support > div:first-child,
 #volunteer > div:first-child,
 #internship > div:first-child {

@@ -1,3 +1,10 @@
+@import "../common/variables.css";
+@import "../common/fonts.css";
+@import "../common/layout.css";
+@import "../components/buttons.css";
+@import "../components/footer.css";
+@import "../components/header.css";
+
 main > section:not(#opening-hours),
 #opening-hours > div:first-child {
   flex: 1 1 auto;
@@ -28,6 +35,9 @@ main > section:not(#opening-hours),
 #opening-hours .text-box {
   background-color: var(--section-color-7);
   color: var(--text-color-2);
+}
+
+#opening-hours .text-box > div + div h2 {
   margin-top: 20px;
 }
 

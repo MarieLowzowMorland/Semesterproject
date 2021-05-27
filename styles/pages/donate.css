@@ -1,3 +1,12 @@
+@import "../common/variables.css";
+@import "../common/fonts.css";
+@import "../common/layout.css";
+@import "../components/buttons.css";
+@import "../components/form.css";
+@import "../components/warning-box.css";
+@import "../components/footer.css";
+@import "../components/header.css";
+
 #donate > div:first-child {
   flex: 1 1 auto;
   background-image: url(../../images/support.jpg);
