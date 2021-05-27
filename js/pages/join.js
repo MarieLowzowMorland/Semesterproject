@@ -1,6 +1,9 @@
 import addUserMessage from "../components/userMessage.js";
 import addValidationToForm from "../components/formValidation.js";
 import sendContactForm from "../api/contact-form.js";
+import addFooterForPage from "../templates/footer.js";
+
+addFooterForPage();
 
 addValidationToForm("join-form", async () => {
   const mailSent = await sendContactForm(document.getElementById("join-form"));
