@@ -1,8 +1,10 @@
 import addUserMessage from "../components/userMessage.js";
 import addValidationToForm from "../components/formValidation.js";
 import sendContactForm from "../api/contact-form.js";
+import addHeaderForPage, { pageNames } from "../templates/header.js";
 import addFooterForPage from "../templates/footer.js";
 
+addHeaderForPage(pageNames.JOIN);
 addFooterForPage();
 
 addValidationToForm("join-form", async () => {
