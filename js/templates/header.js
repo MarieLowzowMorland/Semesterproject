@@ -106,7 +106,7 @@ const headerTemplate = (selectedPage) => {
             ${link(selectedPage, pageNames.INVOLVE)}
             ${link(selectedPage, pageNames.ABOUT)}
             ${link(selectedPage, pageNames.DONATE)}
-            <button id="close-menu">Close menu</button>
+            <li><button id="close-menu">Close menu</button></li>
           </ul>
         </div>
       </nav>

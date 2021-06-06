@@ -3,7 +3,6 @@
 @import "../common/layout.css";
 @import "../components/buttons.css";
 @import "../components/form.css";
-@import "../components/warning-box.css";
 @import "../components/footer.css";
 @import "../components/header.css";
 
@@ -46,11 +45,6 @@
     margin: 40px 10% 0;
   }
 
-  #donate .text-box .warning-box {
-    width: 100vw;
-    margin: 10px 0 10px -10vw;
-  }
-
   #donate-form .heading-box {
     position: absolute;
     right: 0;
@@ -70,11 +64,6 @@
 
   #donate .text-box {
     margin-top: 80px;
-  }
-
-  #donate .text-box .warning-box {
-    width: 50vw;
-    margin: 10px 0 10px -5vw;
   }
 
   #donate-form{

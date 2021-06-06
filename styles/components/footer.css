@@ -61,10 +61,6 @@ footer .marker-icon {
   footer section:last-child {
     margin-bottom: 0;
   }
-
-  footer .warning-box {
-    margin: 0;
-  }
 }
 
 @media screen and (min-width: 1200px) {

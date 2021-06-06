@@ -135,9 +135,4 @@ main > section:not(#opening-hours),
     display: block;
     padding: 80px 40px 40px;
   }
-
-  #opening-hours .text-box > .warning-box {
-    width: calc(100% + 80px);
-    margin-left: -40px;
-  }
 }
